@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e^x and pi</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.4.1/decimal.min.js"></script>
+    </head>
+    <body>
+        <h1 class="title">Calculating the first n digits of <i>e</i><sup><i>x</i></sup> and &pi;.</h1>
+        <div class="container">
+            <div>
+                <h1>Calculate <i>e</i><sup><i>x</i></sup></h1>
+                <input id="eXInput" type="number" placeholder="Enter x" step="any">
+                <input id="eNInput" type="number" placeholder="Number of decimals" step="1">
+                <button onclick="calculateEToX()">Calculate <i>e</i><sup><i>x</i></sup></button>
+                <div id="eResult" class="result"></div>
+            </div>
+            <div>
+                <h1>Calculate &pi;</h1>
+                <input id="piNInput" type="number" placeholder="Number of decimals" step="1">
+                <button onclick="calculatePi()">Calculate &pi;</button>
+                <div id="piResult" class="result"></div>
+            </div>
+        </div>
+
+        <script src="file.js"></script>
+    </body>
+</html>
